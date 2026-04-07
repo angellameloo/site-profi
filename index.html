@@ -5,57 +5,75 @@
     <title>Profissões do Futuro</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
+<script src="script.js" defer></script>
+
+<!-- ALERTA -->
 <body onload="boasVindas()">
 
 <header>
-    <h1>Profissões do Futuro </h1>
+    <h1>Profissões do Futuro</h1>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Tecnologia</a>
+        <a href="#">Sustentabilidade</a>
+        <a href="#">Contato</a>
+    </nav>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Profissões</a></li>
-        <li><a href="#">Contato</a></li>
-    </ul>
-</nav>
-
 <main>
-    <h2>O Futuro do Trabalho</h2>
-    <p>Novas tecnologias estão criando profissões inovadoras e cheias de oportunidades.</p>
 
-    <!-- BOTÃO -->
-    <h3>Descubra uma profissão</h3>
-    <button onclick="mudarTexto()">Clique aqui</button>
-    <p id="texto">Clique no botão para ver uma profissão do futuro!</p>
+<section>
+    <h2>O que são?</h2>
+    <p>As profissões do futuro são aquelas que surgem com o avanço da tecnologia e das necessidades da sociedade.</p>
 
-    <!-- CALCULADORA -->
-    <h3>Calculadora Simples</h3>
+    <button onclick="mudarTexto()">Clique para mudar o texto</button>
+    <p id="texto">O futuro está chegando!</p>
+</section>
+
+<section>
+    <h2>Exemplos</h2>
+    <button onclick="mostrarConteudo()">Mostrar/Esconder</button>
+    <div id="conteudo">
+        <p>Engenheiro de IA</p>
+        <p>Especialista em energia sustentável</p>
+        <p>Desenvolvedor de realidade virtual</p>
+    </div>
+</section>
+
+<section>
+    <h2>Trocar Cor</h2>
+    <button onclick="trocarCor()">Mudar cor do fundo</button>
+</section>
+
+<section>
+    <h2>Calculadora</h2>
     <input type="number" id="n1" placeholder="Número 1">
     <input type="number" id="n2" placeholder="Número 2">
-    <br><br>
     <button onclick="somar()">Somar</button>
     <p id="resultado"></p>
+</section>
 
-    <!-- QUIZ -->
-    <h3>Quiz: Profissões do Futuro</h3>
-    <p>Qual dessas profissões está ligada à Inteligência Artificial?</p>
-
-    <button onclick="resposta('a')">Médico</button>
-    <button onclick="resposta('b')">Engenheiro de IA</button>
-    <button onclick="resposta('c')">Motorista</button>
-
-    <p id="quizResposta"></p>
-
-    <!-- CONTADOR -->
-    <h3>Contador</h3>
+<section>
+    <h2>Contador</h2>
+    <button onclick="contar()">Contar</button>
     <p id="contador">0</p>
-    <button onclick="contar()">Clique</button>
+</section>
+
+<section>
+    <h2>Quiz</h2>
+    <p>Qual dessas é uma profissão do futuro?</p>
+    <button onclick="resposta(true)">Engenheiro de IA</button>
+    <button onclick="resposta(false)">Cavaleiro medieval</button>
+    <p id="quizResposta"></p>
+</section>
+
 </main>
 
 <footer>
-    <p>Integrantes: Seu Nome Aqui</p>
+    <p>Integrantes: Angella e Vinícius</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

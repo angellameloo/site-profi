@@ -1,40 +1,51 @@
-// ALERTA DE BOAS-VINDAS
 function boasVindas() {
-    alert("Bem-vindo ao site sobre Profissões do Futuro");
+    alert("Bem-vindo ao site Profissões do Futuro!");
 }
 
-// MUDAR TEXTO
+// Mudar texto
 function mudarTexto() {
-    document.getElementById("texto").innerHTML =
-        "Profissão: Cientista de Dados ";
+    document.getElementById("texto").innerHTML = "Você acabou de mudar o texto!";
 }
 
-// CALCULADORA
+// Mostrar/Esconder
+function mostrarConteudo() {
+    let conteudo = document.getElementById("conteudo");
+
+    if (conteudo.style.display === "none") {
+        conteudo.style.display = "block";
+    } else {
+        conteudo.style.display = "none";
+    }
+}
+
+// Trocar cor
+function trocarCor() {
+    document.body.style.backgroundColor = "#d8f3dc";
+}
+
+// Calculadora
 function somar() {
     let n1 = Number(document.getElementById("n1").value);
     let n2 = Number(document.getElementById("n2").value);
 
     let resultado = n1 + n2;
 
-    document.getElementById("resultado").innerHTML =
-        "Resultado: " + resultado;
+    document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
 }
 
-// QUIZ
-function resposta(opcao) {
-    let resposta = document.getElementById("quizResposta");
-
-    if (opcao === "b") {
-        resposta.innerHTML = "Correto! Engenheiro de IA é uma profissão do futuro.";
-    } else {
-        resposta.innerHTML = "Errado! Tente novamente.";
-    }
-}
-
-// CONTADOR
-let numero = 0;
+// Contador
+let cont = 0;
 
 function contar() {
-    numero++;
-    document.getElementById("contador").innerHTML = numero;
+    cont++;
+    document.getElementById("contador").innerHTML = cont;
+}
+
+// Quiz
+function resposta(correto) {
+    if (correto) {
+        document.getElementById("quizResposta").innerHTML = "Resposta correta!";
+    } else {
+        document.getElementById("quizResposta").innerHTML = "Resposta errada!";
+    }
 }
