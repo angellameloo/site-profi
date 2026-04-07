@@ -1,16 +1,15 @@
-// Alerta de boas-vindas
 function boasVindas() {
-    alert("Bem-vindo ao site!");
+    alert("Bem-vindo ao site sobre Profissões do Futuro!");
 }
 
 // Mudar texto
 function mudarTexto() {
-    document.getElementById("texto").innerHTML = "Texto alterado!";
+    document.getElementById("texto").innerHTML = "Profissão: Engenheiro de Inteligência Artificial 🤖";
 }
 
 // Trocar cor
 function mudarCor() {
-    document.body.style.backgroundColor = "lightblue";
+    document.body.style.backgroundColor = "#c8e6c9";
 }
 
 // Mostrar / esconder

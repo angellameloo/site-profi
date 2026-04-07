@@ -1,20 +1,20 @@
 body {
     font-family: Arial;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #e8f5e9; /* verde claro */
 }
 
-/* Título */
+/* Cabeçalho */
 header {
-    background-color: #333;
+    background-color: #2e7d32;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
 }
 
 /* Menu */
 nav {
-    background-color: #555;
+    background-color: #388e3c;
 }
 
 nav ul {
@@ -43,20 +43,21 @@ main {
 /* Botões */
 button {
     margin: 10px;
-    padding: 10px;
+    padding: 10px 15px;
     border: none;
-    background-color: #007BFF;
+    background-color: #43a047;
     color: white;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #1b5e20;
 }
 
 /* Rodapé */
 footer {
-    background-color: #333;
+    background-color: #2e7d32;
     color: white;
     text-align: center;
     padding: 10px;
