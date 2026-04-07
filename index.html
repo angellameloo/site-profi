@@ -5,68 +5,58 @@
     <title>Profissões do Futuro</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<script src="script.js" defer></script>
-
-<!-- ALERTA -->
 <body onload="boasVindas()">
 
 <header>
     <h1>Profissões do Futuro</h1>
+
     <nav>
-        <a href="#">Início</a>
-        <a href="#">Tecnologia</a>
-        <a href="#">Sustentabilidade</a>
-        <a href="#">Contato</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#exemplos">Exemplos</a>
+        <a href="#interacoes">Interações</a>
     </nav>
 </header>
 
 <main>
 
-<section>
+<section id="sobre">
     <h2>O que são?</h2>
-    <p>As profissões do futuro são aquelas que surgem com o avanço da tecnologia e das necessidades da sociedade.</p>
-
-    <button onclick="mudarTexto()">Clique para mudar o texto</button>
-    <p id="texto">O futuro está chegando!</p>
+    <p id="texto">As profissões do futuro estão ligadas à tecnologia, inovação e sustentabilidade.</p>
+    <button onclick="mudarTexto()">Mudar texto</button>
 </section>
 
-<section>
-    <h2>Exemplos</h2>
-    <button onclick="mostrarConteudo()">Mostrar/Esconder</button>
+<section id="exemplos">
+    <h2>Exemplos de profissões</h2>
+    <button onclick="toggleConteudo()">Mostrar/Esconder</button>
+
     <div id="conteudo">
-        <p>Engenheiro de IA</p>
-        <p>Especialista em energia sustentável</p>
-        <p>Desenvolvedor de realidade virtual</p>
+        <p>Engenheiro de Inteligência Artificial</p>
+        <p>Especialista em Energia Sustentável</p>
+        <p>Desenvolvedor de Realidade Virtual</p>
     </div>
 </section>
 
-<section>
-    <h2>Trocar Cor</h2>
-    <button onclick="trocarCor()">Mudar cor do fundo</button>
-</section>
+<section id="interacoes">
+    <h2>Interações</h2>
 
-<section>
-    <h2>Calculadora</h2>
+    <button onclick="trocarCor()">Trocar cor do fundo</button>
+
+    <h3>Calculadora</h3>
     <input type="number" id="n1" placeholder="Número 1">
     <input type="number" id="n2" placeholder="Número 2">
     <button onclick="somar()">Somar</button>
     <p id="resultado"></p>
-</section>
 
-<section>
-    <h2>Contador</h2>
-    <button onclick="contar()">Contar</button>
+    <h3>Contador</h3>
+    <button onclick="contar()">Clique</button>
     <p id="contador">0</p>
-</section>
 
-<section>
-    <h2>Quiz</h2>
-    <p>Qual dessas é uma profissão do futuro?</p>
-    <button onclick="resposta(true)">Engenheiro de IA</button>
-    <button onclick="resposta(false)">Cavaleiro medieval</button>
-    <p id="quizResposta"></p>
+    <h3>Quiz</h3>
+    <p>Qual é uma profissão do futuro?</p>
+    <button onclick="verificar(true)">Engenheiro de IA</button>
+    <button onclick="verificar(false)">Cavaleiro medieval</button>
+    <p id="resposta"></p>
+
 </section>
 
 </main>
@@ -75,5 +65,6 @@
     <p>Integrantes: Angella e Vinícius</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

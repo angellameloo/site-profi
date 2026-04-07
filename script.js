@@ -2,50 +2,53 @@ function boasVindas() {
     alert("Bem-vindo ao site Profissões do Futuro!");
 }
 
-// Mudar texto
+// mudar texto
 function mudarTexto() {
-    document.getElementById("texto").innerHTML = "Você acabou de mudar o texto!";
+    document.getElementById("texto").innerText =
+    "Essas profissões envolvem tecnologia, inovação e novas soluções!";
 }
 
-// Mostrar/Esconder
-function mostrarConteudo() {
-    let conteudo = document.getElementById("conteudo");
+// mostrar/esconder
+function toggleConteudo() {
+    let div = document.getElementById("conteudo");
 
-    if (conteudo.style.display === "none") {
-        conteudo.style.display = "block";
+    if (div.style.display === "none") {
+        div.style.display = "block";
     } else {
-        conteudo.style.display = "none";
+        div.style.display = "none";
     }
 }
 
-// Trocar cor
+// trocar cor
 function trocarCor() {
-    document.body.style.backgroundColor = "#d8f3dc";
+    document.body.style.background =
+    "linear-gradient(to right, #95d5b2, #74c69d)";
 }
 
-// Calculadora
+// calculadora
 function somar() {
     let n1 = Number(document.getElementById("n1").value);
     let n2 = Number(document.getElementById("n2").value);
 
     let resultado = n1 + n2;
 
-    document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
+    document.getElementById("resultado").innerText =
+    "Resultado: " + resultado;
 }
 
-// Contador
-let cont = 0;
+// contador
+let numero = 0;
 
 function contar() {
-    cont++;
-    document.getElementById("contador").innerHTML = cont;
+    numero++;
+    document.getElementById("contador").innerText = numero;
 }
 
-// Quiz
-function resposta(correto) {
+// quiz
+function verificar(correto) {
     if (correto) {
-        document.getElementById("quizResposta").innerHTML = "Resposta correta!";
+        document.getElementById("resposta").innerText = "✅ Correto!";
     } else {
-        document.getElementById("quizResposta").innerHTML = "Resposta errada!";
+        document.getElementById("resposta").innerText = "❌ Errado!";
     }
 }
