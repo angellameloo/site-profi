@@ -7,51 +7,55 @@
 </head>
 <body onload="boasVindas()">
 
-    <!-- Título principal -->
-    <header>
-        <h1>Profissões do Futuro 🌎</h1>
-    </header>
+<header>
+    <h1>Profissões do Futuro </h1>
+</header>
 
-    <!-- Menu -->
-    <nav>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Profissões</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Profissões</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</nav>
 
-    <!-- Conteúdo -->
-    <main>
-        <h2>O Futuro do Trabalho</h2>
-        <p>Com o avanço da tecnologia, novas profissões estão surgindo, como desenvolvedor de IA, especialista em dados e engenheiro de robôs.</p>
+<main>
+    <h2>O Futuro do Trabalho</h2>
+    <p>Novas tecnologias estão criando profissões inovadoras e cheias de oportunidades.</p>
 
-        <h2>Exemplos de Profissões</h2>
-        <p>🔹 Cientista de Dados</p>
-        <p>🔹 Engenheiro de Inteligência Artificial</p>
-        <p>🔹 Desenvolvedor de Realidade Virtual</p>
+    <!-- BOTÃO -->
+    <h3>Descubra uma profissão</h3>
+    <button onclick="mudarTexto()">Clique aqui</button>
+    <p id="texto">Clique no botão para ver uma profissão do futuro!</p>
 
-        <!-- Interações -->
+    <!-- CALCULADORA -->
+    <h3>Calculadora Simples</h3>
+    <input type="number" id="n1" placeholder="Número 1">
+    <input type="number" id="n2" placeholder="Número 2">
+    <br><br>
+    <button onclick="somar()">Somar</button>
+    <p id="resultado"></p>
 
-        <h3>Descubra uma profissão</h3>
-        <button onclick="mudarTexto()">Clique aqui</button>
-        <p id="texto">Clique no botão para ver uma profissão do futuro!</p>
+    <!-- QUIZ -->
+    <h3>Quiz: Profissões do Futuro</h3>
+    <p>Qual dessas profissões está ligada à Inteligência Artificial?</p>
 
-        <button onclick="mudarCor()">Mudar cor do site</button>
+    <button onclick="resposta('a')">Médico</button>
+    <button onclick="resposta('b')">Engenheiro de IA</button>
+    <button onclick="resposta('c')">Motorista</button>
 
-        <button onclick="toggleTexto()">Mostrar/Esconder curiosidade</button>
-        <p id="extra">A Inteligência Artificial pode criar novas carreiras que ainda nem existem!</p>
+    <p id="quizResposta"></p>
 
-        <h3>Contador de cliques</h3>
-        <p id="contador">0</p>
-        <button onclick="contar()">Clique aqui</button>
-    </main>
+    <!-- CONTADOR -->
+    <h3>Contador</h3>
+    <p id="contador">0</p>
+    <button onclick="contar()">Clique</button>
+</main>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>Integrantes: Seu Nome Aqui</p>
-    </footer>
+<footer>
+    <p>Integrantes: Seu Nome Aqui</p>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
