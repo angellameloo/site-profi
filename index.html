@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="boasVindas()">
+
+    <!-- Título principal -->
+    <header>
+        <h1>Meu Site Interativo</h1>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo -->
+    <main>
+        <h2>Sobre o Site</h2>
+        <p>Este site foi criado para um trabalho escolar usando HTML, CSS e JavaScript.</p>
+
+        <h2>Interações</h2>
+
+        <!-- Botão que muda texto -->
+        <button onclick="mudarTexto()">Clique aqui</button>
+        <p id="texto">Texto original</p>
+
+        <!-- Troca de cor -->
+        <button onclick="mudarCor()">Mudar cor de fundo</button>
+
+        <!-- Mostrar/esconder -->
+        <button onclick="toggleTexto()">Mostrar/Esconder</button>
+        <p id="extra">Texto escondido</p>
+
+        <!-- Contador -->
+        <h3>Contador</h3>
+        <p id="contador">0</p>
+        <button onclick="contar()">Contar</button>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Integrantes: Seu Nome Aqui</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
